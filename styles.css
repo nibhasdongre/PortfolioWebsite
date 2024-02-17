@@ -1,0 +1,444 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+.hero-image {
+    background-image: url('https://img.freepik.com/premium-photo/comfortable-workspace-with-laptop-computer-notebook-coffee-cup-beige-background_35674-10182.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: #1a0e02;
+    text-shadow: #f8f8f8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-image h1 {
+    font-size: 3em;
+    margin: 10px; /* Added 'px' to specify the margin */
+}
+
+.hero-image p {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Main Section Styling */
+section {
+    margin: 50px auto;
+    background-color: #f5f5dc;
+    border-radius: 20px;
+    padding: 30px;
+    width: 66.67%;
+}
+
+/* About Me Section Styling */
+#about .about-content {
+    display: flex;
+    flex-direction: column; /* Adjusted for better responsiveness on smaller screens */
+    align-items: center;
+    text-align: center;
+}
+
+#about .about-text {
+    flex: 1;
+    text-align: center; /* Centered text */
+    padding: 20px; /* Added padding for better spacing */
+}
+
+#about .about-image {
+    position: relative;
+}
+
+#about .about-image img {
+    width: 100%; /* Made the image width responsive */
+    max-width: 200px; /* Adjusted the maximum width for better responsiveness */
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Styled image upload */
+.image-upload-label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.image-upload-label img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.image-upload-label span {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+/* Custom Font Class */
+.custom-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Adjust font sizes for different elements */
+.custom-font h1 {
+    font-size: 2em;
+}
+
+.custom-font h3 {
+    font-size: 1.5em;
+}
+
+.custom-font h5 {
+    font-size: 1.2em;
+}
+
+.custom-font p {
+    font-size: 1em;
+}
+.education {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.education-tile {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: #f6af82; /* Background color for the tiles */
+}
+
+.education-tile h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.education-tile p {
+    margin: 8px 0;
+    color: #555;
+}
+
+/* Additional CSS for Improved Social Icons with Logo Images */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .hero-image h1 {
+        font-size: 2em; /* Adjusted font size for smaller screens */
+    }
+
+    .hero-image p {
+        font-size: 1.5em; /* Adjusted font size for smaller screens */
+    }
+
+    section {
+        width: 80%; /* Adjusted section width for smaller screens */
+    }
+
+    #about .about-text {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    #about .about-image img {
+        max-width: 150px; /* Adjusted maximum width for smaller screens */
+    }
+
+    .image-upload-label img {
+        max-width: 100px; /* Adjusted maximum width for smaller screens */
+    }
+
+    .custom-font h1 {
+        font-size: 1.5em; /* Adjusted font size for smaller screens */
+    }
+
+    .custom-font h3 {
+        font-size: 1.2em; /* Adjusted font size for smaller screens */
+    }
+
+    .custom-font h5 {
+        font-size: 1em; /* Adjusted font size for smaller screens */
+    }
+
+    .custom-font p {
+        font-size: 0.9em; /* Adjusted font size for smaller screens */
+    }
+
+    #socials .social-icons a {
+        padding: 10px; /* Adjusted padding for smaller screens */
+        margin: 0 5px; /* Adjusted margin for smaller screens */
+    }
+    .social-icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    
+    .social-icon {
+        text-decoration: none;
+        overflow: hidden;
+        border-radius: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .social-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .social-icon:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+        .hero-image h1 {
+            font-size: 2em; /* Adjusted font size for smaller screens */
+        }
+    
+        .hero-image p {
+            font-size: 1.5em; /* Adjusted font size for smaller screens */
+        }
+    
+        section {
+            width: 80%; /* Adjusted section width for smaller screens */
+        }
+    
+        #about .about-text {
+            padding: 10px; /* Adjusted padding for smaller screens */
+        }
+    
+        #about .about-image img {
+            max-width: 150px; /* Adjusted maximum width for smaller screens */
+        }
+    
+        .image-upload-label img {
+            max-width: 100px; /* Adjusted maximum width for smaller screens */
+        }
+    
+        .custom-font h1 {
+            font-size: 1.5em; /* Adjusted font size for smaller screens */
+        }
+    
+        .custom-font h3 {
+            font-size: 1.2em; /* Adjusted font size for smaller screens */
+        }
+    
+        .custom-font h5 {
+            font-size: 1em; /* Adjusted font size for smaller screens */
+        }
+    
+        .custom-font p {
+            font-size: 0.9em; /* Adjusted font size for smaller screens */
+        }
+    
+        #socials .social-icons a {
+            padding: 10px; /* Adjusted padding for smaller screens */
+            margin: 0 5px; /* Adjusted margin for smaller screens */
+        }
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
+    #projects .project-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #projects .project-text {
+        flex: 1;
+        text-align: center;
+    }
+    
+    #projects .project-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    
+    #projects .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-top: 20px;
+    }   margin-bottom: 20px;
+}
+
+
+
+#projects .project-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#projects .project-text {
+    flex: 1;
+    text-align: center;
+}
+
+#projects .project-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+#projects .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* Additional CSS for the contacts layout */
+#contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contacts li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#contacts a {
+    color: #6e4e12;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+#projects .project-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#projects .project-text {
+    flex: 1;
+    text-align: center;
+}
+
+#projects .project-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+#projects .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}   margin-bottom: 20px;
+
+
+
+
+#projects .project-details {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#projects .project-text {
+flex: 1;
+text-align: center;
+}
+
+#projects .project-image {
+width: 200px;
+height: 200px;
+border-radius: 100%;
+overflow: hidden;
+margin-left: 25px;
+margin-top: 10px;
+}
+
+#projects .project-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+margin-top: 20px;
+}
+
+/* Additional CSS for the contacts layout */
+#contacts ul {
+list-style: none;
+padding: 0;
+}
+
+#contacts li {
+font-size: 1.2em;
+margin-bottom: 10px;
+}
+
+#contacts a {
+color: #6e4e12;
+text-decoration: none;
+font-weight: bold;
+}
+
+.section-spacing {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
